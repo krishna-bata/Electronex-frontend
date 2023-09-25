@@ -1,0 +1,60 @@
+@import "../../../index.scss";
+
+.main-nav {
+  justify-content: space-between;
+  padding-block: 20px;
+  align-items: center;
+  .company-logo {
+    .company-logo-link {
+      font-size: 2rem;
+      letter-spacing: 0.1rem;
+      font-weight: 700;
+      text-decoration: none;
+      .left-text {
+        color: var(--accent-color);
+      }
+      .right-text {
+        color: var(--secondary-text-color);
+      }
+    }
+  }
+  .middle-nav-links {
+    ul {
+      gap: 30px;
+      li {
+        .nav-link-item {
+          font-size: 1rem;
+          text-decoration: none;
+          letter-spacing: 0.05rem;
+          color: var(--secondary-text-color);
+        }
+        :hover {
+          color: var(--primary-text-color);
+        }
+      }
+    }
+  }
+  .right-nav-links {
+    ul {
+      gap: 20px;
+      align-items: center;
+      li {
+        .nav-link-item {
+          font-size: 1rem;
+          text-decoration: none;
+          letter-spacing: 0.05rem;
+          color: var(--secondary-text-color);
+          .nav-signin-btn {
+            @include primary-button(8px,20px,1rem);
+          }
+          .nav-link-hamburger {
+            display: none;
+          }
+        }
+        :hover {
+          color: var(--primary-text-color);
+        }
+      }
+    }
+  }
+}
